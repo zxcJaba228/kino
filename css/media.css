@@ -1,0 +1,72 @@
+
+@media (max-width:900px) {
+    .films .films-block{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    
+    header .text{
+        padding: 50px 0 50px 0;
+    }
+    
+    header .menu nav{
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    
+    header .menu nav ul a{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    header .poster{
+        padding: 10px 0;
+    }
+    
+    header .poster i{
+        font-size: 20px;
+    }
+    
+    header .poster p{
+        font-size: 11px;
+    }
+    
+    header .menu nav img{
+        width: 100px;
+    }
+}
+
+@media (max-width:500px) {
+    .films .films-block{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 400px) {
+    header .text h1{
+        font-size: 30px;
+    }
+    
+    header .text p{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    
+    header .text .btn{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    header .text .btn a{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+    header .menu nav ul a{
+        font-size: 15px;
+    }
+}

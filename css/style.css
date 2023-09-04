@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --a: 'arial';
+    --i: 'impact';
+}
+
+body{
+    background: #02153a;
+    font-family: var(--a);
+    min-width: 320px;
+}
+
+.title{
+    font-size: 36px;
+    color: #eb7e28;
+    border-bottom: 2px solid #eb7e28;
+    display: inline;
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* header start */
+/* ************************************************** */
+
+header .poster{
+    padding-top: 27px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #4a0f98, #b16616);
+}
+
+header .poster i{
+    font-size: 51px;
+    color: #fff;
+}
+
+header .poster p{
+    font-size: 18px;
+    color: #fff;
+    width: 161px;
+    margin-left: 17px;
+}
+
+header .menu{
+    background: #000;
+}
+
+
+header .menu nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu nav ul{
+    display: flex;
+}
+
+header .menu nav ul a{
+    font-size: 18px;
+    color: #fff;
+    padding: 43px 12px 44px 12px;
+    display: flex;
+    border-bottom: 3px solid transparent;
+    transition: 0.5s;
+}
+
+header .menu nav ul a:hover{
+    color: #e27c28;
+    border-bottom: 3px solid #e27c28;
+}
+
+header .text{
+    background: url(../img/header-fon.jpg) no-repeat center/cover;
+    padding: 186px 0 169px 0;
+}
+
+header .text h1{
+    font-size: 60px;
+    color: #fff;
+    font-family: var(--i);
+}
+
+header .text p{
+    font-size: 18px;
+    color: #fff;
+    max-width: 578px;
+    width: 100%;
+    margin-top: 37px;
+}
+
+header .text .btn a{
+    width: 164px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+header .text .btn{
+    max-width: 359px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 86px;
+    transition: 0.5s;
+}
+
+header .text .btn a:hover{
+    background: chocolate;
+    box-shadow: 0 0 15px 0 #000;
+}
+/* ************************************************** */
+/* header end */
+
+/* films start */
+/* *************************************************** */
+
+.films{
+    padding-top: 67px;
+    padding-bottom: 74px;
+}
+
+.films .box{
+    position: relative; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+.films .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.films .box:hover img{
+    transform: scale(1.5);
+}
+
+.films .box .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 17px;
+    padding-right: 17px;
+    background: #00000041;
+}
+
+.films .box .text i{
+    font-size: 41px;
+    color: #fff;
+}
+.films .box .text h2{
+    font-size: 24px;
+    color: #fff;
+    margin-top: 23px;
+}
+.films .box .text p{
+    font-size: 16px;
+    color: #fff;
+    margin-top: 17px;
+}
+
+.films .films-block{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 57px;
+}
+
+/* *************************************************** */
+/* films end */
+
+/* fon-docter start */
+/* *************************************************** */
+
+.fon-docter{
+    position: relative;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    z-index: 1;
+}
+
+.fon-docter video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fon-docter p{
+    font-size: 18px;
+    color: #fff;
+    max-width: 536px;
+    width: 100%;
+}
+
+.fon-docter a{
+    width: 164px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #190d11;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 51px;
+    transition: 0.5s;
+}
+
+.fon-docter a:hover{
+    background: #190d11;
+    color: #fff;
+    box-shadow: 0 0 15px 0 #fff;
+}
+
+/* *************************************************** */
+/* fon-docter end */
